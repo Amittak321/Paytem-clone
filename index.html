@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blue: "#00BAF2",
+              darkBlue: "#0F4A8A",
+              white: "#F5F7FA",
+              darkWhite: "#F6F6F6"
+            },
+          },
+        },
+      };
+    </script>
+    <title>Paytm Clone</title>
+  </head>
+  <body class="font-family: 'Inter',sans-serif;">
+    <nav class="flex-wrap">
+      <div class="flex justify-between p-2">
+        <a class="ml-10">
+          <img class="w-44" src="./assets/paytm_logo.png" alt="logo" />
+        </a>
+
+        <nav class="flex-wrap items-center text-lg justify-end hidden lg:flex">
+          <a class="mr-6 font-bold">Paytm for Consumer</a>
+          <a class="mr-6 font-bold">Payments</a>
+          <a class="mr-6 font-bold">Company</a>
+          <a class="mr-6 font-bold">Investor Relations</a>
+          <a class="mr-6 font-bold">Career</a>
+        </nav>
+        <button
+          class="flex bg-blue text-white items-center px-2 rounded-3xl mt-2 w-30 font-bold hover:bg-darkBlue hover:fill-blue md:mr-16"
+        >
+          Sign in
+          <svg
+            class="ml-2 mr-0"
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="17" cy="17" r="17" />
+            <circle cx="17" cy="14.7331" r="7.93333" fill="white" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.07898 28.048C6.58399 23.4894 11.4312 20.3999 16.9999 20.3999C22.5687 20.3999 27.4159 23.4894 29.9209 28.048C26.8029 31.691 22.1711 33.9999 16.9999 33.9999C11.8288 33.9999 7.19693 31.691 4.07898 28.048Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <h2 class="bg-darkWhite py-3 mt-3 text-center">No Wallet KYC Required 😊 to pay using UPI on Paytm. <a class="font-bold">Learn more</a></h2>
+
+    <div class="flex py-24 flex-col md:flex-row items-center">
+        <div class="flex flex-col ml-24 md:flex-col pl-10 ">
+            <img class="w-24 md:w-24 text-center" src="./assets/1654517453942.png" alt="paytm">
+            <h1 class=" text-3xl md:text-5xl font-bold mt-10">India's Most-loved 
+                <br> Payments App</h1>
+            <p class="text-lg font-medium w-1/2 mt-4">Recharge & pay bills, book flights &
+             movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</p>
+             <button class="flex justify-start mt-10">Download Paytm App </button>
+        </div>
+        <div class="w-1/2 m-10">
+            <img src="./assets/mobile.png" alt="paytm mobile image">
+        </div>
+    </div>
+  </body>
+</html>
